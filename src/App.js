@@ -1,6 +1,14 @@
 import './App.css';
+import Link from './components/link.js'
 
-function App() {
+const checkIn = () => {
+  var pass = prompt("パスワードを入力して下さい:","");
+  if (pass != null) window.location.href = "https://www.forte2020.net/" + pass;
+}
+
+
+// function App() {
+const App = () => {
   const logo = '/images/logo.png';
   return (
     <div className="App">
@@ -9,14 +17,7 @@ function App() {
         <p>
           <b>manta Kawaii</b>
         </p>
-        <a
-          className="App-link"
-          href="https://www.forte2020.net/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Forte
-        </a>
+        <Link text="Forte" onClick={()=>checkIn()}/>
       </header>
     </div>
   );
