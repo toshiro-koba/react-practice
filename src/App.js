@@ -3,7 +3,7 @@ import Link from './components/link.js'
 
 const checkIn = () => {
   var pass = prompt("パスワードを入力して下さい:","");
-  if (pass != null) window.location.href = "https://www.forte2020.net/" + pass;
+  if (pass != null) window.location.href = "https://www.forte2020.net/";
 }
 
 
